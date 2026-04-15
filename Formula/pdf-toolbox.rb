@@ -1,5 +1,5 @@
 # pdf-toolbox.rb
-class pdf-toolbox < Formula
+class PdfToolbox < Formula
   desc "Batch process PDF compression, splitting, PDF to JPEG, and PDF to Word conversion."
   homepage "https://github.com/dct74/pdf-toolbox"
   url "https://github.com/dct74/pdf-toolbox/releases/download/v0.1/pdf-toolbox"
