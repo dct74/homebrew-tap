@@ -3,7 +3,7 @@ class Exconverter < Formula
   desc "Convert excel to folders"
   homepage "https://github.com/dct74/xlconvert"
   url "https://github.com/dct74/xlconvert/releases/download/v0.1/exconverter"
-  sha256 "c15a5b199dca8d811fc4a0bbaf34885dff6a314f33e4f9d931c15a1024b2d5ed"
+  sha256 "a78ba777d3780675bfc8d8cf79104e5c1ed786d05a8c3947a8619c90c834cd12"
   version "0.1"
   
   def install
