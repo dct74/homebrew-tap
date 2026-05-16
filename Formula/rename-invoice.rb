@@ -7,7 +7,7 @@ class RenameInvoice < Formula
   version "0.1"
   
   def install
-    bin.install "rename-invoice"
+    bin.install "rename-invoice" => "reninv"
   end
 
   test do
