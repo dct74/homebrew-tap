@@ -1,4 +1,4 @@
-# xlconv.rb
+# exconverter.rb
 class Exconverter < Formula
   desc "Convert excel to folders"
   homepage "https://github.com/dct74/xlconvert"
