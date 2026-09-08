@@ -1,4 +1,4 @@
-# watermark.rb
+# xlconv.rb
 class Exconverter < Formula
   desc "Convert excel to folders"
   homepage "https://github.com/dct74/xlconvert"
@@ -11,6 +11,6 @@ class Exconverter < Formula
   end
 
   test do
-    system "#{bin}/watermark", "--help"
+    system "#{bin}/xlconv", "--help"
   end
 end
