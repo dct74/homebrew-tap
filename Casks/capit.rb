@@ -1,7 +1,7 @@
 cask "capit" do
-  version "v0.4"
-  sha256 "86ca6b0938b099089ce4be1595614fb746d5bd871a2b1c091ce7333296d59521"
-  url "https://github.com/dct74/capit/releases/download/v0.4/Capit.app.zip"
+  version "v0.5"
+  sha256 "eb3a2e2e5b878fa34e77a2109cf67fb0e0b4cd1bdec52c7da14c6ff1544855fb"
+  url "https://github.com/dct74/capit/releases/download/v0.5/Capit.app.zip"
   name "Capit"
   desc "Minimalist macOS native screenshot tool"
   homepage "https://github.com/dct74/capit"
