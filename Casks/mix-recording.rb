@@ -1,6 +1,6 @@
 cask "mix-recording" do
-  version "1.0.1"
-  sha256 "62e9254c0bb88082fc6ee0159db84d7fa25c5a170f995db2134402c1829bf776"
+  version "1.0.2"
+  sha256 "b6667888f36d9414b98befaaa9fb86d0d71176f8dd760b6afcc476f84f0f1f7e"
 
   url "https://github.com/dct74/Mix-Recording/releases/download/v#{version}/Mix-Recording-#{version}.zip"
   name "Mix-Recording"
@@ -11,6 +11,15 @@ cask "mix-recording" do
   depends_on macos: :ventura
 
   app "Mix-Recording.app"
+
+  # Homebrew quarantines cask downloads. This app is signed ad-hoc ("Sign to Run Locally") instead of
+  # notarized, so the quarantine flag makes Gatekeeper block the first launch with "Apple cannot
+  # verify this app". Clearing it lets the app open on the first double-click.
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args:         ["-dr", "com.apple.quarantine", "#{appdir}/Mix-Recording.app"],
+                   sudo:         false
+  end
 
   uninstall quit: "io.github.dct74.Mix-Recording"
 
