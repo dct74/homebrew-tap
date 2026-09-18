@@ -7,7 +7,7 @@ cask "capit" do
   desc "Menu-bar screenshot annotation tool for macOS"
   homepage "https://github.com/dct74/capit"
 
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "Capit.app"
 
