@@ -2,9 +2,9 @@
 class Watermark < Formula
   desc "批量图片和PDF文件添加水印"
   homepage "https://github.com/dct74/watermark"
-  url "https://github.com/dct74/watermark/releases/download/v0.3/watermark"
-  sha256 "a6cae8b575df1e5b27b24a2150fcd62d628437f7f572ae58a66ecb34f247777c"
-  version "0.3"
+  url "https://github.com/dct74/watermark/releases/download/v0.4/watermark"
+  sha256 "367b85ddde4991ff49dfe6d9102620c2d35f8bbb6229aa3821b2003f51fb83ce"
+  version "0.4"
   
   def install
     bin.install "watermark"
