@@ -2,8 +2,7 @@ cask "cliphistory" do
   version "1.5.0"
   sha256 "b2dbeaa4b486d8637fbd2cfd0fac562ac8cce81bc4aa3c00b8e61e2dd10602aa"
 
-  url "https://github.com/dct74/ClipHistory/releases/download/v#{version}/ClipHistory.dmg",
-      verified: "github.com/dct74/ClipHistory/"
+  url "https://github.com/dct74/ClipHistory/releases/download/v#{version}/ClipHistory.dmg"
   name "ClipHistory"
   desc "Menu bar clipboard history with caret-anchored popup and ordered paste"
   homepage "https://github.com/dct74/ClipHistory"
@@ -13,7 +12,7 @@ cask "cliphistory" do
     strategy :github_latest
   end
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "ClipHistory.app"
 
