@@ -1,9 +1,8 @@
 class AutoSwitchTermTheme < Formula
   desc "Automatically switch the macOS Terminal profile with the system appearance"
   homepage "https://github.com/dct74/auto-switch-term-theme"
-  url "https://github.com/dct74/auto-switch-term-theme.git",
-      tag:      "v1.0.0",
-      revision: "1c7fc9d4fa69e9f1c5900acbca2862dcecd93ffa"
+  url "https://github.com/dct74/auto-switch-term-theme/archive/refs/tags/v1.0.0.tar.gz"
+  sha256 "7b202cff105fa80b3dd0e3504977376d67f6b7f11bf065f96bdbb199394749d7"
   license "MIT"
   head "https://github.com/dct74/auto-switch-term-theme.git", branch: "main"
 
