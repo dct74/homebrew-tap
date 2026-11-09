@@ -1,6 +1,6 @@
 cask "cliphistory" do
-  version "1.7.4"
-  sha256 "d243d92f7ff1e4060d31f8e7cc66520e431c464463c3c8dd2bb2ba4c872ccf19"
+  version "1.7.5"
+  sha256 "7024b9d4fae65b53af089954de42576bf6029c61857df63ef4bbc97817747ad5"
 
   url "https://github.com/dct74/ClipHistory/releases/download/v#{version}/ClipHistory.dmg"
   name "ClipHistory"
