@@ -1,6 +1,6 @@
 cask "capit" do
-  version "1.5.6"
-  sha256 "aa81e80aebe43b5226ac8836d0fd20c705a8de0c5d65d78b225b146915731254"
+  version "1.5.7"
+  sha256 "47f98073851dc850beea46f38879a618c59d156ec41263199025d3c0f37b5b2d"
 
   url "https://github.com/dct74/capit/releases/download/v#{version}/Capit-#{version}.zip"
   name "Capit"
