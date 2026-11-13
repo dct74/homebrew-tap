@@ -1,6 +1,6 @@
 cask "windowback" do
-  version "0.2.1"
-  sha256 "1955640079530f324612b5801554f3c65d0f19cf80460d02d76619937b541221"
+  version "0.2.2"
+  sha256 "a3682427ad88a304e145342c2f607a9c41794ce957bbb70637f84fc16415bd3c"
 
   url "https://github.com/dct74/WindowBack/releases/download/v#{version}/WindowBack-#{version}.zip"
   name "WindowBack"
