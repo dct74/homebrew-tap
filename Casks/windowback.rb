@@ -16,14 +16,6 @@ cask "windowback" do
 
   app "WindowBack.app"
 
-  # ad-hoc signed (no Developer ID), so a quarantined copy is blocked by Gatekeeper
-  # on first launch. Scoped to this bundle only.
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/WindowBack.app"],
-                   sudo: false
-  end
-
   uninstall quit: "dev.dct74.windowback"
 
   zap trash: [
