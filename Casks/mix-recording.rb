@@ -12,13 +12,10 @@ cask "mix-recording" do
 
   app "Mix-Recording.app"
 
-  # Homebrew quarantines cask downloads. This app is signed ad-hoc ("Sign to Run Locally") instead of
-  # notarized, so the quarantine flag makes Gatekeeper block the first launch with "Apple cannot
-  # verify this app". Clearing it lets the app open on the first double-click.
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args:         ["-dr", "com.apple.quarantine", "#{appdir}/Mix-Recording.app"],
-                   sudo:         false
+  # The app is signed ad-hoc ("Sign to Run Locally") instead of notarized, so a
+  # quarantined copy is blocked by Gatekeeper on first launch.
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/Mix-Recording.app"]
   end
 
   uninstall quit: "io.github.dct74.Mix-Recording"

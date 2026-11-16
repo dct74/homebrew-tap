@@ -19,10 +19,8 @@ cask "cliphistory" do
   # The app is ad-hoc signed (no Developer ID), so a quarantined copy is blocked
   # by Gatekeeper on first launch. Same effect as `--no-quarantine`, applied only
   # to this app bundle.
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/ClipHistory.app"],
-                   sudo: false
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/ClipHistory.app"]
   end
 
   zap trash: [
